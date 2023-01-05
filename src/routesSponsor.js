@@ -11,7 +11,7 @@ import {
 const routerSponsors = Router();
 
 
-routerSponsors.get("/sponsors", async function (req, res) {
+routerSponsors.get("/sponsor", async function (req, res) {
   let sponsors = await getSponsors();
   res.json(sponsors);
 });

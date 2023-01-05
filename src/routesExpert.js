@@ -12,7 +12,7 @@ import {
 const routerExperts = Router();
 
 
-routerExperts.get("/experts", async function (req, res) {
+routerExperts.get("/expert", async function (req, res) {
   let experts = await getExperts();
   res.json(experts);
 });
